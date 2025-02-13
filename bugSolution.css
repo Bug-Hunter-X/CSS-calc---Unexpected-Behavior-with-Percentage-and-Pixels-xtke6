@@ -1,0 +1,16 @@
+/* bugSolution.css */
+/* Instead of relying on calc(), use viewport units (vw) for more reliable behavior. */
+#myElement {
+  width: 50vw;
+  margin-left: 5vw;
+  margin-right: 5vw; 
+}
+/* Or set a fixed container width and use percentage within */
+.container {
+  width: 800px;
+}
+.container #myElement {
+  width: 50%;
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+/* Note: Using box-sizing: border-box; ensures consistency in the width across browsers. */
